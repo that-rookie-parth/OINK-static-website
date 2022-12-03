@@ -1,0 +1,45 @@
+{
+    "info":"INFO",
+    "places":[{
+        "img1":"dhaba.jpg",
+        "time":"Open: 5:00 pm || Close: 1:30 am",
+        "owner":"Chinto",
+        "contact":"100"
+    },
+
+    {
+        "img1":"hideout.jpg",
+        "time":"Open: 5:00 pm || Close: 1:30 am",
+        "owner":"Chinto",
+        "contact":"100"   
+    },
+
+    {
+        "img1":"al-kareem.jpg",
+        "time":"Open: 5:00 pm || Close: 1:30 am",
+        "owner":"Chinto",
+        "contact":"100"
+    },
+
+    {
+        "img1":"smoothie zone.webp",
+        "time":"Open: 5:00 pm || Close: 1:30 am",
+        "owner":"Chinto",
+        "contact":"100"
+    },
+
+    {
+        "img1":"maggie point.webp",
+        "time":"Open: 5:00 pm || Close: 1:30 am",
+        "owner":"Chinto",
+        "contact":"100"
+    },
+
+    {
+        "img1":"laziz.webp",
+        "time":"Open: 5:00 pm || Close: 1:30 am",
+        "owner":"Chinto",
+        "contact":"100"
+    }
+]
+}

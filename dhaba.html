@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHABA</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body bgcolor="#FFE1DC">
+    <!-- sign in part -->
+    <div class="loginform">
+        <div class="loginbox">
+            <a href="#" class="togglebox">Close</a>
+        </div>
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login">
+                <div class="signup_link">
+                    Not a member? <a href="#">Signup</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- nav bar -->
+    <div class="bg">
+        <nav>
+            <div class="title">
+                <a href="index.html" class="title">OINK!</a>
+            </div>
+            <div class="buttons">
+                <a href="#n" class="button togglebox">SIGN IN</a>
+                <a href="#n" class="button">CART</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- sec heading -->
+    <div class="section_heading">
+        <img src="dhaba.jpg">
+        <h1 class="section_title">DHABA</h1>
+    </div>
+
+    <div class="dhaba">
+        <div class="menu">
+            <div class="food-items">
+                <img src="burger.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Smoky Hamburger</h5>
+                        <h5 class="price"> $8 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit reiciendis nam non quia! Earum eveniet minus. Facilis explicabo natus nihil voluptatem eveniet pariatur.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+    
+            <div class="food-items">
+                <img src="chicken.jpeg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Honey Garlic Chicken</h5>
+                        <h5 class="price"> $15 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing elit.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+    
+            <div class="food-items">
+                <img src="soup.jpeg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Manchow Soup</h5>
+                        <h5 class="price"> $8 </h5>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam facilis, magni consectetur necessitatibus.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+    
+            <div class="food-items">
+                <img src="Spaghetti.jpeg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Basil Pesto Spaghetti</h5>
+                        <h5 class="price"> $12 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+    
+            <div class="food-items">
+                <img src="salmon.jpeg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Roast Salmon</h5>
+                        <h5 class="price"> $15 </h5>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+    
+            <div class="food-items">
+                <img src="Sandwich.jpeg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>BBQ Sandwich</h5>
+                        <h5 class="price"> $10 </h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus reiciendis nam non quia! Earum eveniet quia minus nemo.</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#menu">MENUS</a></li>
+            <li><a href="#n">ABOUT</a></li>
+            <li><a href="#n">TERMS</a></li>
+            <li><a href="#n">PRIVACY POLICY</a></li>
+        </ul>
+        <!-- <p class="copyright">OINK @ 2022</p> -->
+    </div>
+
+    <!-- pop up JS -->
+    <script>
+        let togglebox = document.querySelectorAll(".togglebox"),
+            loginform = document.querySelector(".loginform")
+
+        for (let i = 0; i < togglebox.length; i++) {
+            togglebox[i].onclick = event => {
+                loginform.classList.toggle("visible")
+            }
+        }
+
+        window.onload = function () {
+            document.onclick = event => {
+                if (event.target.classList.contains("visible")) {
+                    loginform.classList.remove("visible")
+                }
+            }
+        };
+    </script>
+
+</body>
+
+</html>
